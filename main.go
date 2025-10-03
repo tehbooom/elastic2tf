@@ -82,7 +82,7 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case tea.WindowSizeMsg:
 		m.windowWidth = msg.Width
 		m.windowHeight = msg.Height
-		headerHeight := 5
+		headerHeight := 6
 		footerHeight := 2
 		textareaHeight := msg.Height - headerHeight - footerHeight
 
